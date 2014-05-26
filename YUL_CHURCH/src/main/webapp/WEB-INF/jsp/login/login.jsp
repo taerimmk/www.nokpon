@@ -94,7 +94,7 @@
 												name="_wp_http_referer" value="/my-account/" /> <input
 												type="button" class="button" name="login" value="로그인"
 												id="login" /> <a class="lost_password"
-												href="http://flatsome.uxthemes.com/my-account/lost-password/">
+												href="<c:url value="/register/registerUser" />">
 												<input type="button" class="button" name="login"
 												value="회원가입" />
 											</a>

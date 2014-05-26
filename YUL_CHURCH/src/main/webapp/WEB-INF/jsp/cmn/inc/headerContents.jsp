@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="sec"%>
 <div class="header-wrapper">
@@ -126,9 +126,8 @@
 										</form>
 									</div>
 									<!-- row -->
-									
-								</div>
-								<!-- .nav-dropdown --></li>
+
+								</div> <!-- .nav-dropdown --></li>
 							<!-- .search-dropdown -->
 
 							<li id="menu-item-504"
@@ -493,18 +492,44 @@
 
 
 					<div class="right-links">
-<c:set value="${sessionScope.loginInfo}" var="loginInfo" />
+						<c:set value="${sessionScope.loginInfo}" var="loginInfo" />
 						<ul class="header-nav">
-						<c:if test="${loginInfo == null}">
-							<li class="mini-cart"><a
-								href="<c:url value="/login" />"
-								class="nav-top-link">Login</a></li>
-						</c:if>		
-						<c:if test="${loginInfo != null && loginInfo.login}">
-							<li class="mini-cart"><a
-								href="<c:url value="/j_spring_security_logout" />"
-								class="nav-top-link">LogOut</a></li>
-						</c:if>
+							<c:if test="${loginInfo == null}">
+								<li class="mini-cart"><a href="<c:url value="/login" />"
+									class="nav-top-link">Login</a></li>
+							</c:if>
+							<c:if test="${loginInfo != null && loginInfo.login}">
+								<li class="account-dropdown hide-for-small"><a
+									href="http://flatsome.uxthemes.com/my-account/"
+									class="nav-top-link"> My Account </a>
+									<div class="nav-dropdown" style="display: none;">
+										<ul>
+											<li id="menu-item-566"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-566"><a
+												href="http://flatsome.uxthemes.com/wishlist/">My
+													Wishlist</a></li>
+											<li id="menu-item-2599"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2599"><a
+												href="http://flatsome.uxthemes.com/my-account/track-order/">Track
+													my order</a></li>
+											<li id="menu-item-681"
+												class="menu-item menu-item-type-post_type menu-item-object-page menu-item-681"><a
+												href="http://flatsome.uxthemes.com/my-account/custom-account-page/">Custom
+													account page</a></li>
+											<li id="menu-item-2621"
+												class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-2621"><a
+												href="/my-account/edit-account">Edit account</a></li>
+											<li id="menu-item-2643"
+												class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2643"><a
+												href="<c:url value="/j_spring_security_logout" />">Logout</a></li>
+
+										</ul>
+									</div>
+									<!-- end account dropdown --></li>
+								<%-- <li class="mini-cart"><a
+									href="<c:url value="/j_spring_security_logout" />"
+									class="nav-top-link">LogOut</a></li> --%>
+							</c:if>
 
 							<!-- Show mini cart if Woocommerce is activated -->
 
