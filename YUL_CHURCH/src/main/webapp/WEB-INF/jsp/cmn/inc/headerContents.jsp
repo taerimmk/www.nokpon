@@ -493,12 +493,18 @@
 
 
 					<div class="right-links">
-
+<c:set value="${sessionScope.loginInfo}" var="loginInfo" />
 						<ul class="header-nav">
+						<c:if test="${loginInfo == null}">
 							<li class="mini-cart"><a
-								href="http://flatsome.uxthemes.com/my-account/"
+								href="<c:url value="/login" />"
 								class="nav-top-link">Login</a></li>
-
+						</c:if>		
+						<c:if test="${loginInfo != null && loginInfo.login}">
+							<li class="mini-cart"><a
+								href="<c:url value="/j_spring_security_logout" />"
+								class="nav-top-link">LogOut</a></li>
+						</c:if>
 
 							<!-- Show mini cart if Woocommerce is activated -->
 

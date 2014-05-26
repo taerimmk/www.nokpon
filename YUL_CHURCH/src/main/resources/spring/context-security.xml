@@ -15,8 +15,8 @@
 		<!-- <intercept-url pattern="/circle/**" access="ROLE_NOKPON" />
 		<intercept-url pattern="/**" access="IS_AUTHENTICATED_ANONYMOUSLY" /> -->
 		<!-- <intercept-url pattern="/*" access="ROLE_ADMIN" /> -->
-		<form-login login-page="/login?auth=fail" default-target-url="/main"
-			authentication-failure-url="/accessdenied" always-use-default-target="false"
+		<form-login login-page="/login" default-target-url="/main"
+			authentication-failure-url="/login?auth=fail" always-use-default-target="false"
 			authentication-success-handler-ref="loginSuccessHandler" />
 
 		<logout logout-success-url="/login" invalidate-session="true"
