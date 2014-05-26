@@ -1,0 +1,356 @@
+/* General styling of the window */
+
+.logo-center #site-navigation > li:last-child{display: none;}
+
+.sw-open {
+	position: fixed;
+	background: #22272d;
+	width: 60px;
+	height: 60px;
+	top: 30%;
+	transition: position 0.5s;
+	opacity: 0.7;
+	visibility: visible;
+	background-image: url('../img/open.gif');
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.sw-open:hover {
+	opacity: 0.9;
+}
+.sw-open-left {
+	left: 0;
+}
+
+.sw-open-right {
+	right: 0;
+}
+
+.sw-open-left.sw-open-hidden {
+	left: -100px;
+}
+.sw-open-right.sw-open-hidden {
+	right: -100px;
+}
+
+.sw-open-hidden {
+	visibility: hidden;
+}
+
+.switcher {
+	position: fixed;
+	top: 0;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #fff;
+	padding: 40px 0 20px;
+	background: #22272d;
+	z-index: 4096;
+	transition: all 1s;
+	visibility: visible;
+}
+
+
+
+.sw-header,
+.sw-main { margin: 0 auto; max-width: 960px; }
+
+.sw-header { margin-bottom: 30px; position: relative; }
+.sw-main:after {
+	content: '';
+	width: 100%;
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+}
+
+/* grid */
+.switcher-extended .sw-one-third { width: 31%; float: left; margin-right: 3.32%; }
+.switcher-extended .sw-last { margin-right: 0; }
+
+.sw-close {
+	cursor: pointer;
+	position: absolute;
+	background: url( '../img/sw-close-v2.png' );
+	background-repeat: no-repeat;
+	top: 4px;
+	right: 0;
+}
+
+
+
+.sw-title {
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 1px 0 #000;
+}
+
+/* General Elements */
+
+.sw-label {
+	font-weight: bold;
+	display: block;
+}
+
+.switcher select {
+	min-width: 160px;
+	font-size: 13px;
+	padding: 5px 10px;
+}
+
+.sw-section {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+
+/* All Margins */
+.sw-section,
+.sw-label { margin: 0 0 10px 0;}
+
+.sw-reset,
+.switcher select,
+.switcher p {
+	margin: 0 0 20px 0;
+}
+
+/* Color circles */
+
+.sw-box-color,
+.sw-box-color-2 {
+	cursor: pointer;
+	border-radius: 50%;
+	float: left;
+	margin: 0 10px 16px 0;
+	box-shadow: inset 0 0 1px #fff;
+	border: 2px solid #fff;
+	opacity: 1;
+}
+
+.sw-box-color div {
+	width: 20px;
+	border-radius: 20px;
+}
+
+.sw-box-color-2 div {
+	width: 10px;
+}
+
+.sw-box-color div,
+.sw-box-color-2 div {
+	height: 20px;
+	float: left;
+	line-height: 0;
+	box-shadow: none;
+}
+
+.sw-box-color-2 div:first-child {
+	border-radius: 20px 0 0 20px;
+}
+
+.sw-box-color-2 div:last-child {
+	border-radius: 0 20px 20px 0;
+}
+
+.sw-box-color,
+.sw-box-color-2,
+.sw-box-20 {
+	opacity: 0.3;
+	transition: opacity 0.4s;
+}
+
+
+
+/* Boxes for backgrounds and patterns */
+
+.sw-box-20 {
+	width: 20px;
+	height: 20px;
+}
+
+.sw-box-30 {
+	width: 30px;
+	height: 30px;
+}
+
+.sw-box-40 {
+	width: 40px;
+	height: 40px;
+}
+
+.sw-box-20,
+.sw-box-30,
+.sw-box-40 {
+	margin-right: 10px;
+	margin-bottom: 14px;
+	float: left;
+	border: 2px solid #fff;
+	box-shadow: 0 0 3px #000;
+	cursor: pointer;
+	opacity: 0.3;
+}
+
+/* 1.01 Different opacities */
+.sw-box-active,
+.sw-box-color-2:hover,
+.sw-box-color:hover,
+.sw-box-20:hover {
+	opacity: 1;
+}
+
+/* Background styles */
+
+.sw-cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-position: center center;
+}
+
+.sw-repeat    {
+	background-repeat: repeat;
+}
+
+.sw-repeat-y  {
+	background-repeat: repeat-y;
+}
+
+.sw-repeat-x  {
+	background-repeat: repeat-x;
+}
+
+.sw-no-repeat {
+	background-repeat: no-repeat;
+}
+
+/* Reset Button */
+
+.sw-reset {
+	display: inline-block;
+	padding: 10px 15px;
+	background: #666;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sw-reset:hover {
+	background: #fff;
+	color: #666;
+}
+
+.sw-reset:before {
+	width: 100%;
+	height: 0;
+	display: block;
+	content: '\0020';
+	line-height: 0;
+	clear: both;
+}
+
+/* Clears */
+.sw-clear,
+.sw-section:before,
+.sw-section:after,
+.color-split-2:before,
+.color-split-2:after {
+	content: '\0020';
+	display: block;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	zoom: 1;
+}
+
+.sw-section:after,
+.color-split-2:after {
+	clear: both;
+}
+
+/* Extended style */
+
+.switcher-extended {
+	left: 0;
+	right: 0;
+}
+
+.switcher-extended .sw-title {
+	font-size: 36px;
+}
+
+.switcher-extended .sw-close {
+	width: 27px;
+	height: 27px;
+}
+
+/* Left & Right */
+.switcher-left {
+	left: 0;
+}
+
+.switcher-right {
+	right: 0;
+}
+
+.switcher-left,
+.switcher-right {
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 200px;
+	bottom: 0;
+}
+
+.switcher-left .sw-title,
+.switcher-right .sw-title {
+	font-size: 18px;
+}
+
+
+.switcher-left .sw-close,
+.switcher-right .sw-close {
+	width: 20px;
+	height: 20px;
+	background-position: -3px;
+}
+
+/* Show & hide */
+.sw-hidden { right: -200px; visibility: hidden;  }
+.sw-show   { top: 0; visibility: visible; }
+
+/* Remove transitions */
+.sw-no-transition {
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+
+
+/* Hide on small devices */
+@media only screen and (max-width: 959px) and (min-width: 768px){
+	.sw-header,
+	.sw-main { margin: 0 auto; max-width: 100%; padding-left: 20px; padding-right: 20px; }
+	.sw-close {right: 20px;}
+}
+
+/* Hide on small devices */
+@media only screen and (max-width: 767px){
+	.switcher,
+	.sw-open { visibility: hidden; }
+}
+
+
+/* UX themes stuff*/
+html.customizer-active #masthead.stuck{right:200px;}
+html.customizer-active .boxed #masthead.stuck{right: auto;}
+html.customizer-active{padding-right: 200px!important;}
+.sw-open{z-index: 9999}
