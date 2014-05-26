@@ -1,703 +1,555 @@
-
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!doctype html>
+<!DOCTYPE html>
+<!--[if lte IE 9 ]><html class="ie lt-ie9" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en-US">
+<!--<![endif]-->
 <head>
+<title>Video Detail</title>
 <jsp:include page="/WEB-INF/jsp/cmn/inc/headerResource.jsp" />
 
-
 </head>
-<body class="home blog">
-	<jsp:include page="/WEB-INF/jsp/cmn/inc/headerContentsMobile.jsp" />
-
-	<div class="entire-site-wrap">
-		<div class="site-margin">
-			<div class="site-wrap-shadow">
-				<jsp:include page="/WEB-INF/jsp/cmn/inc/headerContents.jsp" />
-
-				<section class="section-wrap">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-md-9">
-								<h1 class="nomargin lh-40">Vimeo video post</h1>
-							</div>
-							<!--end 9 col-->
-							<div class="col-md-3">
-								<form method="get" id="searchForm"
-									action="http://aonethemes.com/infinitygrid/">
-									<div class="search-wrapper">
-										<div class="search-icon"></div>
-										<input type="text" maxlength="30" name="s" id="s"
-											class="search_input"> <input type="submit"
-											id="searchSubmit">
-									</div>
-								</form>
-							</div>
-							<!--end 3col-->
-
-						</div>
-						<!--end row-->
-					</div>
-					<!--end container-->
-				</section>
-				<section class="section-wrap nopads">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="hrrule"></div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="section-wrap">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-1 bumpnorm">
-								<div class="stickysidebar">
-
-									<div class="datewrap centertext bumpmini">
-										<span class="entrylg">20</span> <br> <span
-											class="entrysm">Jan</span>
-
-									</div>
-
-									<div class="datewrap centertext linetop">
-										<div class="post-like">
-											<a href="#" data-post_id="31"> <span title=""
-												class="qtip like"></span>
-											</a><span class="count">10</span>
-										</div>
-									</div>
-
-									<div id="post-31"
-										class="post-31 post type-post status-publish format-video hentry category-post-formats category-video-clips tag-video-format tag-vimeo">
-										<div id="wrapsocials">
-											<div class="datewrap centertext mini-text linetop">
-
-												<div class="tags_container_social">
-													<a
-														href="http://www.facebook.com/share.php?u=http://aonethemes.com/infinitygrid/vimeo-video-post/"
-														onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')"
-														target="_blank">
-
-														<div class="facebook-share"></div>
-
-													</a>
-
-													<div id="fb-root" class=" fb_reset">
-														<div
-															style="position: absolute; top: -10000px; height: 0px; width: 0px;">
-															<div>
-																<iframe name="fb_xdm_frame_http" frameborder="0"
-																	allowtransparency="true" scrolling="no"
-																	id="fb_xdm_frame_http" aria-hidden="true"
-																	title="Facebook Cross Domain Communication Frame"
-																	tab-index="-1"
-																	src="http://static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=41#channel=f4c403f&amp;origin=http%3A%2F%2Faonethemes.com"
-																	style="border: none;"></iframe>
-																<iframe name="fb_xdm_frame_https" frameborder="0"
-																	allowtransparency="true" scrolling="no"
-																	id="fb_xdm_frame_https" aria-hidden="true"
-																	title="Facebook Cross Domain Communication Frame"
-																	tab-index="-1"
-																	src="https://s-static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=41#channel=f4c403f&amp;origin=http%3A%2F%2Faonethemes.com"
-																	style="border: none;"></iframe>
-															</div>
-														</div>
-														<div
-															style="position: absolute; top: -10000px; height: 0px; width: 0px;">
-															<div></div>
-														</div>
-													</div>
-													<script>
-														(function(d, s, id) {
-															var js, fjs = d
-																	.getElementsByTagName(s)[0];
-															if (d
-																	.getElementById(id))
-																return;
-															js = d
-																	.createElement(s);
-															js.id = id;
-															js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-															fjs.parentNode
-																	.insertBefore(
-																			js,
-																			fjs);
-														}
-																(
-																		document,
-																		'script',
-																		'facebook-jssdk'));
-													</script>
-
-
-
-												</div>
-
-												<a href="https://twitter.com/share" class="twitter-me"
-													onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')"
-													target="_blank">
-													<div class="twitter-share"></div>
-												</a>
-
-												<script>
-													!function(d, s, id) {
-														var js, fjs = d
-																.getElementsByTagName(s)[0];
-														if (!d
-																.getElementById(id)) {
-															js = d
-																	.createElement(s);
-															js.id = id;
-															js.src = "//platform.twitter.com/widgets.js";
-															fjs.parentNode
-																	.insertBefore(
-																			js,
-																			fjs);
-														}
-													}(document, "script",
-															"twitter-wjs");
-												</script>
-
-
-												<div class="tags_container_social">
-													<!-- Place this tag where you want the +1 button to render. -->
-													<a
-														href="https://m.google.com/app/plus/x/?v=compose&amp;content=http://aonethemes.com/infinitygrid/vimeo-video-post/"
-														onclick="return !window.open(this.href, 'Googleplus', 'width=500,height=500')"
-														target="_blank">
-														<div class="google-share"></div>
-													</a>
-
-													<!-- Place this tag after the last +1 button tag. -->
-													<script type="text/javascript">
-														(function() {
-															var po = document
-																	.createElement('script');
-															po.type = 'text/javascript';
-															po.async = true;
-															po.src = 'https://apis.google.com/js/plusone.js';
-															var s = document
-																	.getElementsByTagName('script')[0];
-															s.parentNode
-																	.insertBefore(
-																			po,
-																			s);
-														})();
-													</script>
-												</div>
-											</div>
-										</div>
-										<!--end wrap-->
-									</div>
-
-								</div>
-								<!--affix-->
-							</div>
-							<!--end col span-->
-
-							<div class="col-md-8 bumpnorm">
-								<div class="singlewrap colored">
-									<div class="singlewrap">
-										<div id="post-31"
-											class="post-31 post type-post status-publish format-video hentry category-post-formats category-video-clips tag-video-format tag-vimeo">
-
-
-											<div class="fit-vids bumpnorm">
-												<div class="fluid-width-video-wrapper"
-													style="padding-top: 56.27272727272727%;">
-													<!-- <iframe
-														src="//player.vimeo.com/video/32655795?title=0&amp;byline=0&amp;portrait=0"
-														frameborder="0" webkitallowfullscreen=""
-														mozallowfullscreen="" allowfullscreen="" id="fitvid340808"></iframe> -->
-													${video.nttLink }
-												</div>
-											</div>
-
-
-
-
-
-										</div>
-										<!--id wrapper-->
-									</div>
-									<!--end single wrap-->
-
-									<div class="singlewrap bumpnorm linetopbtm accent">
-										<div class="row">
-											<div class="col-xs-9">
-												<div class="cellblock text-left">
-													올린이 <a
-														href="http://aonethemes.com/infinitygrid/author/aone/"
-														title="Posts by Aone" rel="author">${video.user.userId}</a>
-												</div>
-												<div class="cellblock text-left">
-													/ 올린날 <a
-														href="#"
-														title="" rel="category tag">${video.regiDate}</a>
-												</div>
-
-												<!-- <div class="cellblock text-left">
-													/ tags <a
-														href="http://aonethemes.com/infinitygrid/tag/video-format/"
-														rel="tag">Video format</a>, <a
-														href="http://aonethemes.com/infinitygrid/tag/vimeo/"
-														rel="tag">vimeo</a>
-												</div> -->
-											</div>
-											<div class="col-xs-3">
-												<div class="cellblockright text-right">
-													<a href="#reply-title">0 Comments</a>
-												</div>
-											</div>
-										</div>
-										<!--end wrap-->
-									</div>
-									<!--end row-->
-
-									<div class="singlewrap">
-										<article class="main-content">
-											<p>${video.nttCn}</p>
-											<p class="form-submit">
-												<input name="" type="button" id="goList" class="submit" value="목록으로" />
-											</p>
-										</article>
-									</div>
-
-									<!-- <div class="singlewrap dbumpsm linetopbtm bump topbtmbump">
-										<div class="row">
-
-											<div class="col-xs-6 text-left">
-												← <a
-													href="http://aonethemes.com/infinitygrid/biking-in-san-francisco/"
-													rel="prev">Biking in San Francisco</a>
-											</div>
-
-											<div class="col-xs-6 text-right">
-												<a
-													href="http://aonethemes.com/infinitygrid/too-many-hours-of-gaming/"
-													rel="next">Too many hours of gaming</a> →
-											</div>
-										</div>
-									</div> -->
-									<div class="row">
-								
-									<!-- <div class="col-md-4 col-md-offset-4">
-										<div class="pagination-load-more">
-											<div class="pagination-me centertext">
-												<a href="http://aonethemes.com/infinitygrid/2014/01/page/2/">목록으로</a>
-											</div>
-
-											<span class="pagination-span-load"></span>
-										</div>
-									</div> -->
-									</div>
-									<!--end row-->
-									<!-- You can start editing here. -->
-									<!-- If comments are open, but there are no comments. -->
-			
-
-									<div id="respond" class="comment-respond">
-										<h3 id="reply-title" class="comment-reply-title">
-											Leave a Reply <small><a rel="nofollow"
-												id="cancel-comment-reply-link"
-												href="/infinitygrid/vimeo-video-post/#respond"
-												style="display: none;">Cancel reply</a></small>
-										</h3>
-										<form
-											action="http://aonethemes.com/infinitygrid/wp-comments-post.php"
-											method="post" id="commentform" class="comment-form">
-
-											<p class="comment-form-comment">
-												<label for="comment">Comment</label>
-												<textarea id="comment" name="comment" cols="45" rows="8"
-													aria-required="true"></textarea>
-											</p>
-											<p class="form-allowed-tags">
-												You may use these <abbr title="HyperText Markup Language">HTML</abbr>
-												tags and attributes:
-												<code>&lt;a href="" title=""&gt; &lt;abbr
-													title=""&gt; &lt;acronym title=""&gt; &lt;b&gt;
-													&lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt;
-													&lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q
-													cite=""&gt; &lt;strike&gt; &lt;strong&gt; </code>
-											</p>
-											<p class="form-submit">
-												<input name="submit" type="submit" id="submit"
-													value="Post Comment"> <input type="hidden"
-													name="comment_post_ID" value="31" id="comment_post_ID">
-												<input type="hidden" name="comment_parent"
-													id="comment_parent" value="0">
-											</p>
-											<p style="display: none;">
-												<input type="hidden" id="akismet_comment_nonce"
-													name="akismet_comment_nonce" value="78486238cc">
-											</p>
-											<script type="text/javascript"
-												src="http://aonethemes.com/infinitygrid/wp-content/plugins/akismet/_inc/form.js?ver=3.0.0"></script>
-											<p style="display: none;"></p>
-											<input type="hidden" id="ak_js" name="ak_js"
-												value="1399968614380">
-										</form>
-									</div>
-									<!-- #respond -->
-									
-									<div class="singlewrap pushpull">
-										8 Comments On This Topic
-										<ol class="commentlist">
-
-											<li
-												class="comment byuser comment-author-aone bypostauthor even thread-even depth-1"
-												id="li-comment-3">
-												<div id="comment-3">
-													<div class="post-wrap rel">
-														<div class="reply_text">
-															<a class="comment-reply-link"
-																href="/infinitygrid/5/?replytocom=3#respond">Reply</a>
-														</div>
-
-
-														<div class="postcontentreply">
-															<div class="comment-guts">
-																<div class="avatar-comments">
-																	<img alt=""
-																		src="http://1.gravatar.com/avatar/97d03de6b0bb7d7f8d4ba2475549dfd4?s=64&amp;d=&amp;r=G"
-																		class="avatar avatar-64 photo" height="64" width="64">
-																</div>
-
-																<div class="comment-guts-pads">
-																	<!--  <div class="carrot-comment"></div> -->
-
-																	<div class="says">Aone</div>
-
-																	<div class="says">
-																		<span class="says_date"> 3 months ago</span>
-																	</div>
-
-																	<p>Lorem ipsum dolor sit amet, consectetuer
-																		adipiscing elit. Aenean commodo ligula eget dolor.
-																		Aenean massa. Cum sociis natoque penatibus et magnis
-																		dis parturient montes, nascetur ridiculus mus.</p>
-																</div>
-															</div>
-														</div>
-														<!-- END postcontentreply -->
-
-													</div>
-													<!-- END comment -->
-												</div> <!--end entire post wrap-->
-											</li>
-
-											<!-- .children -->
-											<!-- #comment-## -->
-
-											<li class="comment odd alt thread-odd thread-alt depth-1"
-												id="li-comment-12">
-												<div id="comment-12">
-													<div class="post-wrap rel">
-														<div class="reply_text">
-															<a class="comment-reply-link"
-																href="/infinitygrid/5/?replytocom=12#respond">Reply</a>
-														</div>
-
-
-														<div class="postcontentreply">
-															<div class="comment-guts">
-																<div class="avatar-comments">
-																	<img alt=""
-																		src="http://1.gravatar.com/avatar/7654021924db58debede0a558222d8a5?s=64&amp;d=&amp;r=G"
-																		class="avatar avatar-64 photo" height="64" width="64">
-																</div>
-
-																<div class="comment-guts-pads">
-																	<!--  <div class="carrot-comment"></div> -->
-
-																	<div class="says">ほほう</div>
-
-																	<div class="says">
-																		<span class="says_date"> 3 months ago</span>
-																	</div>
-
-																	<p>それで</p>
-																</div>
-															</div>
-														</div>
-														<!-- END postcontentreply -->
-
-													</div>
-													<!-- END comment -->
-												</div> <!--end entire post wrap-->
-											</li>
-											<!-- #comment-## -->
-
-											<li class="comment even thread-even depth-1"
-												id="li-comment-26">
-												<div id="comment-26">
-													<div class="post-wrap rel">
-														<div class="reply_text">
-															<a class="comment-reply-link"
-																href="/infinitygrid/5/?replytocom=26#respond">Reply</a>
-														</div>
-
-
-														<div class="postcontentreply">
-															<div class="comment-guts">
-																<div class="avatar-comments">
-																	<img alt=""
-																		src="http://0.gravatar.com/avatar/8378a47a5f4a901d23222cef70df3203?s=64&amp;d=&amp;r=G"
-																		class="avatar avatar-64 photo" height="64" width="64">
-																</div>
-
-																<div class="comment-guts-pads">
-																	<!--  <div class="carrot-comment"></div> -->
-
-																	<div class="says">Some name</div>
-
-																	<div class="says">
-																		<span class="says_date"> 3 months ago</span>
-																	</div>
-
-																	<p>Test comment.</p>
-																</div>
-															</div>
-														</div>
-														<!-- END postcontentreply -->
-
-													</div>
-													<!-- END comment -->
-												</div> <!--end entire post wrap-->
-											</li>
-											<!-- #comment-## -->
-
-											<li class="comment odd alt thread-odd thread-alt depth-1"
-												id="li-comment-28">
-												<div id="comment-28">
-													<div class="post-wrap rel">
-														<div class="reply_text">
-															<a class="comment-reply-link"
-																href="/infinitygrid/5/?replytocom=28#respond">Reply</a>
-														</div>
-
-
-														<div class="postcontentreply">
-															<div class="comment-guts">
-																<div class="avatar-comments">
-																	<img alt=""
-																		src="http://1.gravatar.com/avatar/b2d7d2d13aed54c2ed7feb538b382b42?s=64&amp;d=&amp;r=G"
-																		class="avatar avatar-64 photo" height="64" width="64">
-																</div>
-
-																<div class="comment-guts-pads">
-																	<!--  <div class="carrot-comment"></div> -->
-
-																	<div class="says">qweqwe</div>
-
-																	<div class="says">
-																		<span class="says_date"> 3 months ago</span>
-																	</div>
-
-																	<p>eeeeeeeeeeeee</p>
-																</div>
-															</div>
-														</div>
-														<!-- END postcontentreply -->
-
-													</div>
-													<!-- END comment -->
-												</div> <!--end entire post wrap-->
-											</li>
-											<!-- #comment-## -->
-										</ol>
-									</div>
-
-								</div>
-
-
-							</div>
-							<!--end col8-->
-
-
-
-							<div class="col-md-3">
-								<aside class="sidebar">
-									<div id="infinitygrid_toplikes_widget-2"
-										class="widget-container widget_infinitygrid_toplikes_widget">
-										<h4 class="widget-title-sidebar">
-											<span class="whiteme">Popular posts (likes based)</span>
-										</h4>
-
-
-										<ul class="heartul">
-
-
-											<li class="cat-item-plus"><a
-												href="http://aonethemes.com/infinitygrid/live-strong-or-high/">Live
-													strong..or high?</a> <span class="likeswidget"><span
-													class="heartcount">114</span> people like this</span></li>
-
-
-											<li class="cat-item-plus"><a
-												href="http://aonethemes.com/infinitygrid/cutest-umbrella-you-ever-seen/">The
-													cutest umbrella ever!</a> <span class="likeswidget"><span
-													class="heartcount">90</span> people like this</span></li>
-
-
-											<li class="cat-item-plus"><a
-												href="http://aonethemes.com/infinitygrid/gallery-post/">Pretty
-													females gallery</a> <span class="likeswidget"><span
-													class="heartcount">80</span> people like this</span></li>
-
-
-											<li class="cat-item-plus"><a
-												href="http://aonethemes.com/infinitygrid/a-puppy-post/">A
-													puppy post</a> <span class="likeswidget"><span
-													class="heartcount">64</span> people like this</span></li>
-
-
-											<li class="cat-item-plus"><a
-												href="http://aonethemes.com/infinitygrid/my-favorite-model/">My
-													favorite model</a> <span class="likeswidget"><span
-													class="heartcount">62</span> people like this</span></li>
-
-
-										</ul>
-										<!--end heart ul-->
-
-									</div>
-									<div id="categories-2"
-										class="widget-container widget_categories">
-										<h4 class="widget-title-sidebar">
-											<span class="whiteme">Categories</span>
-										</h4>
-										<ul>
-											<li class="cat-item cat-item-4"><a
-												href="http://aonethemes.com/infinitygrid/category/audio/"
-												title="View all posts filed under Audio">Audio</a> (2)</li>
-											<li class="cat-item cat-item-5"><a
-												href="http://aonethemes.com/infinitygrid/category/music/"
-												title="View all posts filed under Music">Music</a> (1)</li>
-											<li class="cat-item cat-item-6"><a
-												href="http://aonethemes.com/infinitygrid/category/photography/"
-												title="View all posts filed under Photography">Photography</a>
-												(15)</li>
-											<li class="cat-item cat-item-3"><a
-												href="http://aonethemes.com/infinitygrid/category/post-formats/"
-												title="View all posts filed under Post formats">Post
-													formats</a> (12)</li>
-											<li class="cat-item cat-item-29"><a
-												href="http://aonethemes.com/infinitygrid/category/quotes/"
-												title="View all posts filed under Quotes">Quotes</a> (2)</li>
-											<li class="cat-item cat-item-30"><a
-												href="http://aonethemes.com/infinitygrid/category/travel/"
-												title="View all posts filed under Travel">Travel</a> (1)</li>
-											<li class="cat-item cat-item-7"><a
-												href="http://aonethemes.com/infinitygrid/category/video-clips/"
-												title="View all posts filed under Video clips">Video
-													clips</a> (2)</li>
-										</ul>
-									</div>
-									<div id="tag_cloud-3" class="widget-container widget_tag_cloud">
-										<h4 class="widget-title-sidebar">
-											<span class="whiteme">Tag Cloud</span>
-										</h4>
-										<div class="tagcloud">
-											<a href="http://aonethemes.com/infinitygrid/tag/animals/"
-												class="tag-link-15" title="2 topics"
-												style="font-size: 11.405405405405pt;">animals</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/audio-2/"
-												class="tag-link-9" title="1 topic" style="font-size: 8pt;">audio</a>
-											<a href="http://aonethemes.com/infinitygrid/tag/blonde/"
-												class="tag-link-22" title="4 topics"
-												style="font-size: 15.567567567568pt;">blonde</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/cars/"
-												class="tag-link-27" title="1 topic" style="font-size: 8pt;">cars</a>
-											<a href="http://aonethemes.com/infinitygrid/tag/children/"
-												class="tag-link-10" title="1 topic" style="font-size: 8pt;">children</a>
-											<a href="http://aonethemes.com/infinitygrid/tag/doggy/"
-												class="tag-link-14" title="2 topics"
-												style="font-size: 11.405405405405pt;">doggy</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/famous-quotes/"
-												class="tag-link-18" title="3 topics"
-												style="font-size: 13.675675675676pt;">famous quotes</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/gallery-format/"
-												class="tag-link-21" title="1 topic" style="font-size: 8pt;">gallery
-												format</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/kids/"
-												class="tag-link-12" title="1 topic" style="font-size: 8pt;">kids</a>
-											<a href="http://aonethemes.com/infinitygrid/tag/models/"
-												class="tag-link-20" title="3 topics"
-												style="font-size: 13.675675675676pt;">models</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/photos/"
-												class="tag-link-11" title="10 topics"
-												style="font-size: 22pt;">photos</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/post-formats/"
-												class="tag-link-3" title="2 topics"
-												style="font-size: 11.405405405405pt;">Post formats</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/quote/"
-												class="tag-link-17" title="3 topics"
-												style="font-size: 13.675675675676pt;">Quote</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/standard-post/"
-												class="tag-link-13" title="1 topic" style="font-size: 8pt;">standard
-												post</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/travel/"
-												class="tag-link-30" title="2 topics"
-												style="font-size: 11.405405405405pt;">Travel</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/video-format/"
-												class="tag-link-24" title="1 topic" style="font-size: 8pt;">Video
-												format</a> <a
-												href="http://aonethemes.com/infinitygrid/tag/vimeo/"
-												class="tag-link-25" title="1 topic" style="font-size: 8pt;">vimeo</a>
-										</div>
-									</div>
-									<div id="archives-2" class="widget-container widget_archive">
-										<h4 class="widget-title-sidebar">
-											<span class="whiteme">Archives</span>
-										</h4>
-										<ul>
-											<li><a
-												href="http://aonethemes.com/infinitygrid/2014/03/">March
-													2014</a>&nbsp;(3)</li>
-											<li><a
-												href="http://aonethemes.com/infinitygrid/2014/02/">February
-													2014</a>&nbsp;(1)</li>
-											<li><a
-												href="http://aonethemes.com/infinitygrid/2014/01/">January
-													2014</a>&nbsp;(17)</li>
-										</ul>
-									</div>
-								</aside>
-							</div>
-							<!--end 3 col sidebar-->
-
-						</div>
-						<!--end row-->
-					</div>
-					<!-- ending container-->
-				</section>
-
-
-				<jsp:include page="/WEB-INF/jsp/cmn/inc/footerContents.jsp" />
-				<!--colored section footer-->
-
+<fmt:setLocale value="en_US" scope="session"/>
+<body
+	class="single single-post postid-485 single-format-standard antialiased sticky_header breadcrumb-normal full-width">
+
+
+	<div id="wrapper">
+		<jsp:include page="/WEB-INF/jsp/cmn/inc/headerContents.jsp" />
+
+		<div id="main-content" class="site-main light">
+			<div class="row">
+				<div class="large-12 columns">
+					<div class="top-divider"></div>
+				</div>
 			</div>
-			<!--shadow-->
+			<div class="page-wrapper page-right-sidebar">
+				<div class="row">
+
+
+					<div id="content" class="large-9 left columns" role="main">
+						<div class="page-inner">
+
+							<article id="post-485"
+								class="post-485 post type-post status-publish format-standard has-post-thumbnail hentry category-style tag-brooklyn tag-fashion tag-style-2 tag-women-3">
+								<header class="entry-header text-center">
+									<h1 class="entry-title">${video.nttSj}</h1>
+									<div class="tx-div small"></div>
+									<div class="entry-meta">
+										<span class="meta-author">by <strong><a
+												class="url fn n"
+												href="http://flatsome.uxthemes.com/author/uxthemes/"
+												title="View all posts by Tommy Vedvik" rel="author">${video.user.userId}</a></strong>.
+										</span> Posted on <a
+											href="http://flatsome.uxthemes.com/2013/12/30/just-a-cool-blog-post-with-a-gallery/"
+											title="4:50 pm" rel="bookmark"><time class="entry-date"
+												datetime="2013-12-30T16:50:40+00:00"><fmt:formatDate type="date" value="${video.regiDate}" /></time></a>
+									</div>
+									<!-- .entry-meta -->
+								</header>
+								<!-- .entry-header -->
+
+								<div class="entry-image">
+									<img width="900" height="562"
+										src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/blog-header31-900x562.jpg"
+										class="attachment-large wp-post-image" alt="blog-header3" />
+									<div class="post-date large">
+										<span class="post-date-day"><fmt:formatDate type="date" pattern="dd"  value="${video.regiDate}" /></span> <span
+											class="post-date-month"><fmt:formatDate type="date" pattern="MMM"  value="${video.regiDate}" /></span>
+									</div>
+								</div>
+
+								<div class="entry-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										In sed vulputate massa. Fusce ante magna, iaculis ut purus ut,
+										facilisis ultrices nibh. Quisque commodo nunc eget tortor
+										dapibus, et tristique magna convallis. Phasellus egestas nunc
+										eu venenatis vehicula. Phasellus et magna nulla. Proin ante
+										nunc, mollis a lectus ac, volutpat placerat ante. Vestibulum
+										sit amet magna sit amet nunc faucibus mollis. Aliquam vel
+										lacinia purus, id tristique ipsum. Quisque vitae nibh ut
+										libero vulputate ornare quis in risus. Nam sodales justo orci,
+										a bibendum risus tincidunt id. Etiam hendrerit, metus in
+										volutpat tempus, neque libero viverra lorem, ac tristique orci
+										augue eu metus. Aenean elementum nisi vitae justo adipiscing
+										gravida sit amet et risus. Suspendisse dapibus elementum quam,
+										vel semper mi tempus ac.</p>
+
+									<style type='text/css'>
+#gallery-1 {
+	margin: auto;
+}
+
+#gallery-1 .gallery-item {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	width: 25%;
+}
+
+#gallery-1 img {
+	border: 2px solid #cfcfcf;
+}
+
+#gallery-1 .gallery-caption {
+	margin-left: 0;
+}
+/* see gallery_shortcode() in wp-includes/media.php */
+</style>
+									<div id='gallery-1'
+										class='gallery galleryid-485 gallery-columns-4 gallery-size-thumbnail'>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon portrait'>
+												<a
+													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/602779-0083_3.jpeg'><img
+													width="150" height="150"
+													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/602779-0083_3-150x150.jpeg"
+													class="attachment-thumbnail" alt="602779-0083_3" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon portrait'>
+												<a
+													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/538228-0286_1.jpeg'><img
+													width="150" height="150"
+													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/538228-0286_1-150x150.jpeg"
+													class="attachment-thumbnail" alt="538228-0286_1" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon portrait'>
+												<a
+													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282259-0001_2.jpeg'><img
+													width="150" height="150"
+													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282259-0001_2-150x150.jpeg"
+													class="attachment-thumbnail" alt="282259-0001_2" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon portrait'>
+												<a
+													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282004-0286_2.jpeg'><img
+													width="150" height="150"
+													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282004-0286_2-150x150.jpeg"
+													class="attachment-thumbnail" alt="282004-0286_2" /></a>
+											</dt>
+										</dl>
+										<br style="clear: both" />
+										<dl class='gallery-item'>
+											<dt class='gallery-icon portrait'>
+												<a
+													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/745534-5275_1.jpeg'><img
+													width="150" height="150"
+													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/745534-5275_1-150x150.jpeg"
+													class="attachment-thumbnail" alt="745534-5275_1" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon portrait'>
+												<a
+													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/247251-0080_3.jpeg'><img
+													width="150" height="150"
+													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/247251-0080_3-150x150.jpeg"
+													class="attachment-thumbnail" alt="247251-0080_3" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon portrait'>
+												<a
+													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282243-0008_2.jpeg'><img
+													width="150" height="150"
+													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282243-0008_2-150x150.jpeg"
+													class="attachment-thumbnail" alt="282243-0008_2" /></a>
+											</dt>
+										</dl>
+										<dl class='gallery-item'>
+											<dt class='gallery-icon portrait'>
+												<a
+													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/143280-0083_3.jpeg'><img
+													width="150" height="150"
+													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/143280-0083_3-150x150.jpeg"
+													class="attachment-thumbnail" alt="143280-0083_3" /></a>
+											</dt>
+										</dl>
+										<br style="clear: both" />
+									</div>
+
+									<p>Nam at nisi risus. Proin pretium, dolor vel venenatis
+										suscipit, dui nunc tincidunt lectus, ac placerat felis dui in
+										justo. Aliquam orci velit, facilisis in facilisis non,
+										scelerisque in massa. Integer scelerisque odio nec eros
+										sodales laoreet. Sed sed odio tellus. In tristique felis ac
+										facilisis tempor. Nunc non enim in dolor congue pulvinar sed
+										sed nisi. Mauris viverra convallis feugiat. Nam at mauris
+										laoreet, dictum leo at, tristique mi. Aenean pellentesque
+										justo vel diam elementum iaculis. Nam lobortis cursus
+										vestibulum. Nulla feugiat mauris felis, auctor pretium dui
+										euismod in.</p>
+									<p>Vestibulum et enim vitae lectus malesuada aliquam vitae
+										non mi. Suspendisse tellus eros, ultricies nec lorem feugiat,
+										pharetra auctor dui. Suspendisse placerat neque leo, nec
+										commodo eros ultrices vel. Fusce elit libero, aliquam quis
+										libero non, consectetur accumsan est. Proin tempus mauris id
+										cursus posuere. Sed et rutrum felis, vel aliquet ante.
+										Interdum et malesuada fames ac ante ipsum primis in faucibus.
+										Pellentesque neque tellus, condimentum non eros non,
+										consectetur auctor lacus. Curabitur malesuada odio eget elit
+										egestas porttitor.</p>
+								</div>
+								<!-- .entry-content -->
+
+
+								<div class="blog-share text-center">
+									<div class="tx-div medium"></div>
+									<div class="social-icons share-row">
+										<a
+											href="http://www.facebook.com/sharer.php?u=http://flatsome.uxthemes.com/2013/12/30/just-a-cool-blog-post-with-a-gallery/"
+											target="_blank" class="icon icon_facebook tip-top"
+											data-tip="Share on Facebook"><span class="icon-facebook"></span></a>
+										<a
+											href="https://twitter.com/share?url=http://flatsome.uxthemes.com/2013/12/30/just-a-cool-blog-post-with-a-gallery/"
+											target="_blank" class="icon icon_twitter tip-top"
+											data-tip="Share on Twitter"><span class="icon-twitter"></span></a>
+										<a
+											href="mailto:enteryour@addresshere.com?subject=Just%20a%20cool%20blog%20post%20with%20A%20Gallery&amp;body=Check%20this%20out:%20http://flatsome.uxthemes.com/2013/12/30/just-a-cool-blog-post-with-a-gallery/"
+											class="icon icon_email tip-top" data-tip="Email to a Friend"><span
+											class="icon-envelop"></span></a> <a
+											href="//pinterest.com/pin/create/button/?url=http://flatsome.uxthemes.com/2013/12/30/just-a-cool-blog-post-with-a-gallery/&amp;media=http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/blog-header31-900x562.jpg&amp;description=Just%20a%20cool%20blog%20post%20with%20A%20Gallery"
+											target="_blank" class="icon icon_pintrest tip-top"
+											data-tip="Pin on Pinterest"><span class="icon-pinterest"></span></a>
+										<a
+											href="//plus.google.com/share?url=http://flatsome.uxthemes.com/2013/12/30/just-a-cool-blog-post-with-a-gallery/"
+											target="_blank" class="icon icon_googleplus tip-top"
+											data-tip="Share on Google+"><span
+											class="icon-google-plus"></span></a>
+									</div>
+
+								</div>
+								<footer class="entry-meta">
+									This entry was posted in <a
+										href="http://flatsome.uxthemes.com/category/style/"
+										title="View all posts in Style" rel="category tag">Style</a>
+									and tagged <a href="http://flatsome.uxthemes.com/tag/brooklyn/"
+										rel="tag">brooklyn</a>, <a
+										href="http://flatsome.uxthemes.com/tag/fashion/" rel="tag">fashion</a>,
+									<a href="http://flatsome.uxthemes.com/tag/style-2/" rel="tag">style</a>,
+									<a href="http://flatsome.uxthemes.com/tag/women-3/" rel="tag">women</a>.
+
+								</footer>
+								<!-- .entry-meta -->
+								<div class="author-box">
+									<div class="row">
+										<div class="large-2 small-3 columns">
+											<img alt='Tommy Vedvik'
+												src='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2014/01/Tommy-Vedvik_avatar_1388795118-90x90.png'
+												class='avatar avatar-90 photo' height='90' width='90' />
+										</div>
+										<div class="large-10 small-9 columns">
+											<h4 class="author-name">by Tommy Vedvik</h4>
+
+
+											<p class="author-desc">This is a description of the
+												author. Lorem ipsum dolor sit amet, consectetur adipiscing
+												elit. Integer vitae accumsan nisl. Donec at laoreet sapien,
+												eget facilisis velit. Donec lacinia, nisl in gravida mattis,
+												arcu odio suscipit justo.</p>
+
+										</div>
+									</div>
+								</div>
+
+								<nav role="navigation" id="nav-below" class="navigation-post">
+
+									<div class="nav-previous left">
+										<a
+											href="http://flatsome.uxthemes.com/2013/12/16/an-amazing-responsive-and-retina-ready-theme-2/"
+											rel="prev"><span class="icon-angle-left"></span>
+											Responsive and Retina ready theme.</a>
+									</div>
+									<div class="nav-next right">
+										<a
+											href="http://flatsome.uxthemes.com/2014/01/01/another-cool-blog-post-example/"
+											rel="next">Another cool blog post example! <span
+											class="icon-angle-right"></span></a>
+									</div>
+
+								</nav>
+								<!-- #nav-below -->
+							</article>
+							<!-- #post-## -->
+
+
+							<div id="comments" class="comments-area">
+
+
+								<h3 class="comments-title">
+									5 thoughts on &ldquo;<span>Just a cool blog post with A
+										Gallery</span>&rdquo;
+								</h3>
+
+
+								<ol class="comment-list">
+									<li
+										class="comment byuser comment-author-testuser even thread-even depth-1"
+										id="li-comment-68">
+										<article id="comment-68" class="comment-inner">
+
+											<div class="row collapse">
+												<div class="large-2 columns">
+													<div class="comment-author">
+														<img alt='Pietje'
+															src='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2014/01/Test-User_avatar_1388795052-80x80.jpeg'
+															class='avatar avatar-80 photo' height='80' width='80' />
+													</div>
+												</div>
+												<!-- .large-3 -->
+
+												<div class="large-10 columns">
+													<cite class="fn">Test User</cite> <span class="says">says:</span>
+													<div class="comment-content">
+														<p>Phasellus et magna nulla. Proin ante nunc, mollis a
+															lectus ac, volutpat placerat ante. Vestibulum sit amet
+															magna sit amet nunc faucibus mollis. Aliquam vel lacinia
+															purus, id tristique ipsum.</p>
+													</div>
+
+
+													<div class="comment-meta commentmetadata">
+														<a
+															href="http://flatsome.uxthemes.com/2013/12/30/just-a-cool-blog-post-with-a-gallery/#comment-68"><time
+																datetime="2013-08-18T11:55:38+00:00"> August 18,
+																2013 at 11:55 am </time></a>
+
+														<div class="reply right">
+															<a class='comment-reply-link'
+																href='/2013/12/30/just-a-cool-blog-post-with-a-gallery/?replytocom=68#respond'
+																onclick='return addComment.moveForm("comment-68", "68", "respond", "485")'>Reply</a>
+														</div>
+														<!-- .reply -->
+
+
+													</div>
+													<!-- .comment-meta .commentmetadata -->
+
+												</div>
+												<!-- .large-10 columns -->
+
+											</div>
+											<!-- .row -->
+
+										</article> <!-- #comment -->
+
+										
+									</li>
+									<!-- #comment-## -->
+									<li
+										class="comment byuser comment-author-uxthemes bypostauthor odd alt thread-odd thread-alt depth-1"
+										id="li-comment-70">
+										<article id="comment-70" class="comment-inner">
+
+											<div class="row collapse">
+												<div class="large-2 columns">
+													<div class="comment-author">
+														<img alt='Tommy Vedvik'
+															src='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2014/01/Tommy-Vedvik_avatar_1388795118-80x80.png'
+															class='avatar avatar-80 photo' height='80' width='80' />
+													</div>
+												</div>
+												<!-- .large-3 -->
+
+												<div class="large-10 columns">
+													<cite class="fn"><a href='http://tommyvedvik.com'
+														rel='external nofollow' class='url'>Tommy Vedvik</a></cite> <span
+														class="says">says:</span>
+													<div class="comment-content">
+														<p>Proin tempus mauris id cursus posuere. Sed et
+															rutrum felis, vel aliquet ante. Interdum et malesuada
+															fames ac ante ipsum primis in faucibus. Pellentesque
+															neque tellus, condimentum non eros non, consectetur
+															auctor lacus. Curabitur malesuada odio eget elit egestas
+															porttitor.</p>
+													</div>
+
+
+													<div class="comment-meta commentmetadata">
+														<a
+															href="http://flatsome.uxthemes.com/2013/12/30/just-a-cool-blog-post-with-a-gallery/#comment-70"><time
+																datetime="2013-08-18T11:56:10+00:00"> August 18,
+																2013 at 11:56 am </time></a>
+
+														<div class="reply right">
+															<a class='comment-reply-link'
+																href='/2013/12/30/just-a-cool-blog-post-with-a-gallery/?replytocom=70#respond'
+																onclick='return addComment.moveForm("comment-70", "70", "respond", "485")'>Reply</a>
+														</div>
+														<!-- .reply -->
+
+
+													</div>
+													<!-- .comment-meta .commentmetadata -->
+
+												</div>
+												<!-- .large-10 columns -->
+
+											</div>
+											<!-- .row -->
+
+										</article> <!-- #comment -->
+
+									</li>
+									<!-- #comment-## -->
+									<li
+										class="comment byuser comment-author-testuser even thread-even depth-1"
+										id="li-comment-72">
+										<article id="comment-72" class="comment-inner">
+
+											<div class="row collapse">
+												<div class="large-2 columns">
+													<div class="comment-author">
+														<img alt='Pietje'
+															src='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2014/01/Test-User_avatar_1388795052-80x80.jpeg'
+															class='avatar avatar-80 photo' height='80' width='80' />
+													</div>
+												</div>
+												<!-- .large-3 -->
+
+												<div class="large-10 columns">
+													<cite class="fn">Test User</cite> <span class="says">says:</span>
+													<div class="comment-content">
+														<p>Mauris viverra convallis feugiat. Nam at mauris
+															laoreet, dictum leo at, tristique mi. Aenean pellentesque
+															justo vel diam elementum iaculis. Nam lobortis cursus
+															vestibulum. Nulla feugiat mauris felis, auctor pretium
+															dui euismod in.</p>
+													</div>
+
+
+													<div class="comment-meta commentmetadata">
+														<a
+															href="http://flatsome.uxthemes.com/2013/12/30/just-a-cool-blog-post-with-a-gallery/#comment-72"><time
+																datetime="2013-08-18T11:57:08+00:00"> August 18,
+																2013 at 11:57 am </time></a>
+
+														<div class="reply right">
+															<a class='comment-reply-link'
+																href='/2013/12/30/just-a-cool-blog-post-with-a-gallery/?replytocom=72#respond'
+																onclick='return addComment.moveForm("comment-72", "72", "respond", "485")'>Reply</a>
+														</div>
+														<!-- .reply -->
+
+
+													</div>
+													<!-- .comment-meta .commentmetadata -->
+
+												</div>
+												<!-- .large-10 columns -->
+
+											</div>
+											<!-- .row -->
+
+										</article> <!-- #comment -->
+
+									</li>
+									<!-- #comment-## -->
+								</ol>
+								<!-- .comment-list -->
+
+
+								<div id="respond" class="comment-respond">
+									<h3 id="reply-title" class="comment-reply-title">
+										Leave a Reply <small><a rel="nofollow"
+											id="cancel-comment-reply-link"
+											href="/2013/12/30/just-a-cool-blog-post-with-a-gallery/#respond"
+											style="display: none;">Cancel reply</a></small>
+									</h3>
+									<form
+										action="http://flatsome.uxthemes.com/wp-comments-post.php"
+										method="post" id="commentform" class="comment-form">
+										<p class="comment-notes">
+											Your email address will not be published. Required fields are
+											marked <span class="required">*</span>
+										</p>
+										<p class="comment-form-author">
+											<label for="author">Name <span class="required">*</span></label>
+											<input id="author" name="author" type="text" value=""
+												size="30" aria-required='true' />
+										</p>
+										<p class="comment-form-email">
+											<label for="email">Email <span class="required">*</span></label>
+											<input id="email" name="email" type="text" value="" size="30"
+												aria-required='true' />
+										</p>
+										<p class="comment-form-url">
+											<label for="url">Website</label> <input id="url" name="url"
+												type="text" value="" size="30" />
+										</p>
+										<p class="comment-form-comment">
+											<label for="comment">Comment</label>
+											<textarea id="comment" name="comment" cols="45" rows="8"
+												aria-required="true"></textarea>
+										</p>
+										<p class="form-allowed-tags">
+											You may use these <abbr title="HyperText Markup Language">HTML</abbr>
+											tags and attributes:
+											<code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt;
+												&lt;abbr title=&quot;&quot;&gt; &lt;acronym
+												title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote
+												cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del
+												datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q
+												cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code>
+										</p>
+										<p class="form-submit">
+											<input name="submit" type="submit" id="submit"
+												value="Post Comment" /> <input type='hidden'
+												name='comment_post_ID' value='485' id='comment_post_ID' />
+											<input type='hidden' name='comment_parent'
+												id='comment_parent' value='0' />
+										</p>
+										<p style="display: none;">
+											<input type="hidden" id="akismet_comment_nonce"
+												name="akismet_comment_nonce" value="88806f0be5" />
+										</p>
+										<script type='text/javascript'
+											src='http://flatsome.uxthemes.com/wp-content/plugins/akismet/_inc/form.js?ver=3.0.0'></script>
+										<p style="display: none;">
+											<input type="hidden" id="ak_js" name="ak_js" value="67" />
+										</p>
+									</form>
+								</div>
+								<!-- #respond -->
+
+							</div>
+							<!-- #comments -->
+
+						</div>
+						<!-- .page-inner -->
+					</div>
+					<!-- #content -->
+
+					<jsp:include page="/WEB-INF/jsp/cmn/inc/sideContents.jsp" />
+					<!-- end sidebar -->
+
+
+				</div>
+				<!-- end row -->
+			</div>
+			<!-- end page-wrapper -->
+
 		</div>
-		<!--margin-->
+		<!-- #main-content -->
+
+
+		
+		<jsp:include page="/WEB-INF/jsp/cmn/inc/footerContents.jsp" />
+		<!-- .footer-wrapper -->
 	</div>
-	<!--end entiresite wrap-->
+	<!-- #wrapper -->
+
+	<!-- back to top -->
+	<a href="#top" id="top-link"><span class="icon-angle-up"></span></a>
 	<jsp:include page="/WEB-INF/jsp/cmn/inc/footerResource.jsp" />
-<script type="text/javascript">
-$(function() {
-	$("#goList").on("click",function() {
-		var action = '<c:url value="/site/video/list/${video.pageIndex}" />';
-		location.href = action;
-		return false;
-	});
-});
-	</script>	
 </body>
 </html>

@@ -8,10 +8,8 @@
 <html lang="en-US">
 <!--<![endif]-->
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport"
-	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>Blog | Flatsome | Just another UX Themes site</title>
+
+<title>Main</title>
 <jsp:include page="/WEB-INF/jsp/cmn/inc/headerResource.jsp" />
 
 </head>

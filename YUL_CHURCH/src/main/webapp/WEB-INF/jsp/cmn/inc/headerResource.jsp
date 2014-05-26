@@ -54,19 +54,23 @@
 /* Set FONTS */
 .top-bar-nav a.nav-top-link,body,p,#top-bar,.cart-inner .nav-dropdown,.nav-dropdown
 	{
-	font-family: Lato, helvetica, arial, sans-serif !important;
+	/* font-family: Lato, helvetica, arial, sans-serif !important; */
+	font-family: "Nanum Gothic Coding", sans-serif !important;
 }
 
 .header-nav a.nav-top-link {
-	font-family: Lato, helvetica, arial, sans-serif !important;
+	/* font-family: Lato, helvetica, arial, sans-serif !important; */
+	font-family: "Nanum Gothic Coding", sans-serif !important;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: Lato, helvetica, arial, sans-serif !important;
+	/* font-family: Lato, helvetica, arial, sans-serif !important; */
+	font-family: "Nanum Gothic Coding", sans-serif !important;
 }
 
 .alt-font {
-	font-family: Dancing Script, Georgia, serif !important;
+	/* font-family: Dancing Script, Georgia, serif !important; */
+	font-family: "Nanum Gothic Coding", sans-serif !important;
 }
 
 /* CUSTOM LAYOUT */

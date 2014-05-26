@@ -80,7 +80,8 @@ script {
  *    user zoom.
  */
 html {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: "Nanum Gothic Coding", sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -167,7 +168,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
+  /* font-family: monospace, serif; */
+  font-family: "Nanum Gothic Coding", serif;
   font-size: 1em; }
 
 /**
@@ -385,7 +387,8 @@ body {
   color: #777777;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica", Helvetica, Arial, sans-serif;
+  /* font-family: "Helvetica", Helvetica, Arial, sans-serif; */
+  font-family: "Nanum Gothic Coding", sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -7599,7 +7602,8 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica", Helvetica, Arial, sans-serif;
+  /* font-family: "Helvetica", Helvetica, Arial, sans-serif; */
+  font-family: "Nanum Gothic Coding", sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #555555;
