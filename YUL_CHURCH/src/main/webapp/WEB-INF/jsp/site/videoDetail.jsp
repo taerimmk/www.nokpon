@@ -10,7 +10,12 @@
 <head>
 <title>Video Detail</title>
 <jsp:include page="/WEB-INF/jsp/cmn/inc/headerResource.jsp" />
-
+<style type="text/css">
+iframe {
+	width: 853px;
+	height: 480px;
+}
+</style>
 </head>
 <fmt:setLocale value="en_US" scope="session"/>
 <body
@@ -53,9 +58,7 @@
 								<!-- .entry-header -->
 
 								<div class="entry-image">
-									<img width="900" height="562"
-										src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/blog-header31-900x562.jpg"
-										class="attachment-large wp-post-image" alt="blog-header3" />
+									${video.nttLink }
 									<div class="post-date large">
 										<span class="post-date-day"><fmt:formatDate type="date" pattern="dd"  value="${video.regiDate}" /></span> <span
 											class="post-date-month"><fmt:formatDate type="date" pattern="MMM"  value="${video.regiDate}" /></span>
@@ -63,141 +66,7 @@
 								</div>
 
 								<div class="entry-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										In sed vulputate massa. Fusce ante magna, iaculis ut purus ut,
-										facilisis ultrices nibh. Quisque commodo nunc eget tortor
-										dapibus, et tristique magna convallis. Phasellus egestas nunc
-										eu venenatis vehicula. Phasellus et magna nulla. Proin ante
-										nunc, mollis a lectus ac, volutpat placerat ante. Vestibulum
-										sit amet magna sit amet nunc faucibus mollis. Aliquam vel
-										lacinia purus, id tristique ipsum. Quisque vitae nibh ut
-										libero vulputate ornare quis in risus. Nam sodales justo orci,
-										a bibendum risus tincidunt id. Etiam hendrerit, metus in
-										volutpat tempus, neque libero viverra lorem, ac tristique orci
-										augue eu metus. Aenean elementum nisi vitae justo adipiscing
-										gravida sit amet et risus. Suspendisse dapibus elementum quam,
-										vel semper mi tempus ac.</p>
-
-									<style type='text/css'>
-#gallery-1 {
-	margin: auto;
-}
-
-#gallery-1 .gallery-item {
-	float: left;
-	margin-top: 10px;
-	text-align: center;
-	width: 25%;
-}
-
-#gallery-1 img {
-	border: 2px solid #cfcfcf;
-}
-
-#gallery-1 .gallery-caption {
-	margin-left: 0;
-}
-/* see gallery_shortcode() in wp-includes/media.php */
-</style>
-									<div id='gallery-1'
-										class='gallery galleryid-485 gallery-columns-4 gallery-size-thumbnail'>
-										<dl class='gallery-item'>
-											<dt class='gallery-icon portrait'>
-												<a
-													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/602779-0083_3.jpeg'><img
-													width="150" height="150"
-													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/602779-0083_3-150x150.jpeg"
-													class="attachment-thumbnail" alt="602779-0083_3" /></a>
-											</dt>
-										</dl>
-										<dl class='gallery-item'>
-											<dt class='gallery-icon portrait'>
-												<a
-													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/538228-0286_1.jpeg'><img
-													width="150" height="150"
-													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/538228-0286_1-150x150.jpeg"
-													class="attachment-thumbnail" alt="538228-0286_1" /></a>
-											</dt>
-										</dl>
-										<dl class='gallery-item'>
-											<dt class='gallery-icon portrait'>
-												<a
-													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282259-0001_2.jpeg'><img
-													width="150" height="150"
-													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282259-0001_2-150x150.jpeg"
-													class="attachment-thumbnail" alt="282259-0001_2" /></a>
-											</dt>
-										</dl>
-										<dl class='gallery-item'>
-											<dt class='gallery-icon portrait'>
-												<a
-													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282004-0286_2.jpeg'><img
-													width="150" height="150"
-													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282004-0286_2-150x150.jpeg"
-													class="attachment-thumbnail" alt="282004-0286_2" /></a>
-											</dt>
-										</dl>
-										<br style="clear: both" />
-										<dl class='gallery-item'>
-											<dt class='gallery-icon portrait'>
-												<a
-													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/745534-5275_1.jpeg'><img
-													width="150" height="150"
-													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/745534-5275_1-150x150.jpeg"
-													class="attachment-thumbnail" alt="745534-5275_1" /></a>
-											</dt>
-										</dl>
-										<dl class='gallery-item'>
-											<dt class='gallery-icon portrait'>
-												<a
-													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/247251-0080_3.jpeg'><img
-													width="150" height="150"
-													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/247251-0080_3-150x150.jpeg"
-													class="attachment-thumbnail" alt="247251-0080_3" /></a>
-											</dt>
-										</dl>
-										<dl class='gallery-item'>
-											<dt class='gallery-icon portrait'>
-												<a
-													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282243-0008_2.jpeg'><img
-													width="150" height="150"
-													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/282243-0008_2-150x150.jpeg"
-													class="attachment-thumbnail" alt="282243-0008_2" /></a>
-											</dt>
-										</dl>
-										<dl class='gallery-item'>
-											<dt class='gallery-icon portrait'>
-												<a
-													href='http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/143280-0083_3.jpeg'><img
-													width="150" height="150"
-													src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/08/143280-0083_3-150x150.jpeg"
-													class="attachment-thumbnail" alt="143280-0083_3" /></a>
-											</dt>
-										</dl>
-										<br style="clear: both" />
-									</div>
-
-									<p>Nam at nisi risus. Proin pretium, dolor vel venenatis
-										suscipit, dui nunc tincidunt lectus, ac placerat felis dui in
-										justo. Aliquam orci velit, facilisis in facilisis non,
-										scelerisque in massa. Integer scelerisque odio nec eros
-										sodales laoreet. Sed sed odio tellus. In tristique felis ac
-										facilisis tempor. Nunc non enim in dolor congue pulvinar sed
-										sed nisi. Mauris viverra convallis feugiat. Nam at mauris
-										laoreet, dictum leo at, tristique mi. Aenean pellentesque
-										justo vel diam elementum iaculis. Nam lobortis cursus
-										vestibulum. Nulla feugiat mauris felis, auctor pretium dui
-										euismod in.</p>
-									<p>Vestibulum et enim vitae lectus malesuada aliquam vitae
-										non mi. Suspendisse tellus eros, ultricies nec lorem feugiat,
-										pharetra auctor dui. Suspendisse placerat neque leo, nec
-										commodo eros ultrices vel. Fusce elit libero, aliquam quis
-										libero non, consectetur accumsan est. Proin tempus mauris id
-										cursus posuere. Sed et rutrum felis, vel aliquet ante.
-										Interdum et malesuada fames ac ante ipsum primis in faucibus.
-										Pellentesque neque tellus, condimentum non eros non,
-										consectetur auctor lacus. Curabitur malesuada odio eget elit
-										egestas porttitor.</p>
+									${video.nttCn }
 								</div>
 								<!-- .entry-content -->
 
@@ -240,7 +109,7 @@
 
 								</footer>
 								<!-- .entry-meta -->
-								<div class="author-box">
+								<!-- <div class="author-box">
 									<div class="row">
 										<div class="large-2 small-3 columns">
 											<img alt='Tommy Vedvik'
@@ -259,7 +128,7 @@
 
 										</div>
 									</div>
-								</div>
+								</div> -->
 
 								<nav role="navigation" id="nav-below" class="navigation-post">
 
@@ -267,12 +136,12 @@
 										<a
 											href="http://flatsome.uxthemes.com/2013/12/16/an-amazing-responsive-and-retina-ready-theme-2/"
 											rel="prev"><span class="icon-angle-left"></span>
-											Responsive and Retina ready theme.</a>
+											Go List</a>
 									</div>
 									<div class="nav-next right">
 										<a
 											href="http://flatsome.uxthemes.com/2014/01/01/another-cool-blog-post-example/"
-											rel="next">Another cool blog post example! <span
+											rel="next">Go Home <span
 											class="icon-angle-right"></span></a>
 									</div>
 
