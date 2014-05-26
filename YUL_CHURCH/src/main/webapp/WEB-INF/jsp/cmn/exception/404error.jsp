@@ -41,7 +41,7 @@ iframe {
 					<div id="content" class="large-12 left columns" role="main">
 						<article id="post-0" class="post error404 not-found">
 							<header class="entry-header">
-								<h1 class="entry-title">접근권한이 없습니다.</h1>
+								<h1 class="entry-title">404 error.</h1>
 							</header>
 							<!-- .entry-header -->
 							<div class="entry-content">
