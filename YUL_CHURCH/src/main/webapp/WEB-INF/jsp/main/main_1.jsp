@@ -1,7 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <!--[if lte IE 9 ]><html class="ie lt-ie9" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
@@ -15,7 +12,7 @@
 <jsp:include page="/WEB-INF/jsp/cmn/inc/headerResource.jsp" />
 
 </head>
-<fmt:setLocale value="en_US" scope="session"/> 
+
 <body
 	class="blog antialiased sticky_header breadcrumb-normal full-width">
 
@@ -211,13 +208,17 @@
 								<article id="post-3322"
 									class="post-3322 post type-post status-publish format-standard has-post-thumbnail hentry category-style tag-brooklyn tag-fashion tag-style-2 tag-women-3">
 									<div class="entry-image">
-										<a href="<c:url value="/site/video/get/${video.nttId}/1"/>">
-											${video.nttLink } </a>
+										<a
+											href="http://flatsome.uxthemes.com/2014/04/17/just-another-post-with-a-gallery/">
+											<!-- <img width="300" height="229"
+											src="http://flatsome.uxthemes.com/wp-content/uploads/sites/2/2013/09/men_sale_parallax-300x229.jpg"
+											class="attachment-medium wp-post-image"
+											alt="men_sale_parallax" /> -->
+											${video.nttLink }
+										</a>
 										<div class="post-date large">
-										
-											
-											<span class="post-date-day"><fmt:formatDate type="date" pattern="dd"  value="${video.regiDate}" /></span> <span
-												class="post-date-month"><fmt:formatDate type="date" pattern="MMM"  value="${video.regiDate}" /></span>
+											<span class="post-date-day">17</span> <span
+												class="post-date-month">Apr</span>
 										</div>
 									</div>
 
@@ -231,9 +232,8 @@
 
 										<h3 class="entry-title">
 											<a
-												href="<c:url value="/site/video/get/${video.nttId}/1"/>"
+												href="http://flatsome.uxthemes.com/2014/04/17/just-another-post-with-a-gallery/"
 												rel="bookmark">${video.nttSj }</a>
-												
 										</h3>
 										<div class="tx-div small"></div>
 										<p>${video.nttCn }</p>
@@ -257,7 +257,7 @@
 
 
 
-							<div class="large-4 columns blog-pinterest-style">
+							<!-- <div class="large-4 columns blog-pinterest-style">
 								<article id="post-483"
 									class="post-483 post type-post status-publish format-standard has-post-thumbnail hentry category-style">
 									<div class="entry-image">
@@ -297,12 +297,12 @@
 												Comment</a></span>
 
 									</div>
-									<!-- .entry-content -->
+									.entry-content
 
 								</article>
-								<!-- #post-## -->
+								#post-##
 							</div>
-
+ -->
 
 
 							<!-- <div class="large-4 columns blog-pinterest-style">
@@ -559,78 +559,103 @@
 
 	<jsp:include page="/WEB-INF/jsp/cmn/inc/footerResource.jsp" />
 
-	<script type="text/javascript">
-		(function($) {
-			$(window)
-					.load(
-							function() {
+<script type="text/javascript">
+	(function($) {
+		$(window)
+				.load(
+						function() {
 
-								$('#slider_1301788082').find('br').remove();
+							$('#slider_1301788082').find('br').remove();
 
-								/* install slider */
-								$('#slider_1301788082').iosSlider({
-									snapToChildren : true,
-									desktopClickDrag : true,
-									snapFrictionCoefficient : 0.8,
-									autoSlideTransTimer : 500,
-									horizontalSlideLockThreshold : 3,
-									slideStartVelocityThreshold : 3,
-									infiniteSlider : true,
-									autoSlide : true,
-									autoSlideTimer : 5000,
-									navPrevSelector : $('.next_1301788082'),
-									navNextSelector : $('.prev_1301788082'),
-									onSliderLoaded : startSlider,
-									onSlideChange : slideChange,
-									onSliderResize : slideResize,
-								});
+							/* install slider */
+							$('#slider_1301788082').iosSlider({
+								snapToChildren : true,
+								desktopClickDrag : true,
+								snapFrictionCoefficient : 0.8,
+								autoSlideTransTimer : 500,
+								horizontalSlideLockThreshold : 3,
+								slideStartVelocityThreshold : 3,
+								infiniteSlider : true,
+								autoSlide : true,
+								autoSlideTimer : 5000,
+								navPrevSelector : $('.next_1301788082'),
+								navNextSelector : $('.prev_1301788082'),
+								onSliderLoaded : startSlider,
+								onSlideChange : slideChange,
+								onSliderResize : slideResize,
+							});
 
-								function slideChange(args) {
-									$(args.sliderContainerObject)
-											.find('.inner')
-											.each(
-													function() {
-														$(this)
-																.removeClass(
-																		$(this)
-																				.attr(
-																						'data-animate'));
-													});
-									$(args.sliderContainerObject)
-											.find('.scroll-animate')
-											.each(
-													function() {
-														$(this)
-																.removeClass(
-																		$(this)
-																				.attr(
-																						'data-animate'))
-																.removeClass(
-																		'animated');
-													});
+							function slideChange(args) {
+								$(args.sliderContainerObject)
+										.find('.inner')
+										.each(
+												function() {
+													$(this)
+															.removeClass(
+																	$(this)
+																			.attr(
+																					'data-animate'));
+												});
+								$(args.sliderContainerObject)
+										.find('.scroll-animate')
+										.each(
+												function() {
+													$(this)
+															.removeClass(
+																	$(this)
+																			.attr(
+																					'data-animate'))
+															.removeClass(
+																	'animated');
+												});
 
-									/* start text animation */
-									$(args.currentSlideObject)
-											.find('.inner')
-											.addClass(
-													$(args.currentSlideObject)
-															.find('.inner')
-															.attr(
-																	'data-animate'));
-									$(args.currentSlideObject)
-											.find('.scroll-animate')
-											.each(
-													function() {
-														$(this)
-																.addClass(
-																		'animated')
-																.addClass(
-																		$(this)
-																				.attr(
-																						'data-animate'));
-													});
+								/* start text animation */
+								$(args.currentSlideObject)
+										.find('.inner')
+										.addClass(
+												$(args.currentSlideObject)
+														.find('.inner').attr(
+																'data-animate'));
+								$(args.currentSlideObject)
+										.find('.scroll-animate')
+										.each(
+												function() {
+													$(this)
+															.addClass(
+																	'animated')
+															.addClass(
+																	$(this)
+																			.attr(
+																					'data-animate'));
+												});
 
-									/* change slider height */
+								/* change slider height */
+								var slide_height = $(args.currentSlideObject)
+										.outerHeight();
+								$(args.sliderContainerObject).css('min-height',
+										slide_height);
+								$(args.sliderContainerObject).css('height',
+										'auto');
+
+								/* add current class to slide */
+								$(args.sliderContainerObject)
+										.find('.ux_banner').removeClass(
+												'current');
+								$(args.currentSlideObject).addClass('current');
+
+								/* update bullets */
+								$(args.sliderContainerObject).find(
+										'.sliderBullets .bullet').removeClass(
+										'active');
+								$(args.sliderContainerObject).find(
+										'.sliderBullets .bullet:eq('
+												+ (args.currentSlideNumber - 1)
+												+ ')').addClass('active');
+							}
+
+							function slideResize(args) {
+								/* set height of first slide */
+								setTimeout(function() {
 									var slide_height = $(
 											args.currentSlideObject)
 											.outerHeight();
@@ -638,128 +663,94 @@
 											'min-height', slide_height);
 									$(args.sliderContainerObject).css('height',
 											'auto');
-
-									/* add current class to slide */
-									$(args.sliderContainerObject).find(
-											'.ux_banner')
-											.removeClass('current');
-									$(args.currentSlideObject).addClass(
-											'current');
-
-									/* update bullets */
-									$(args.sliderContainerObject).find(
-											'.sliderBullets .bullet')
-											.removeClass('active');
-									$(args.sliderContainerObject)
-											.find(
-													'.sliderBullets .bullet:eq('
-															+ (args.currentSlideNumber - 1)
-															+ ')').addClass(
-													'active');
-								}
-
-								function slideResize(args) {
-									/* set height of first slide */
-									setTimeout(function() {
-										var slide_height = $(
-												args.currentSlideObject)
-												.outerHeight();
-										$(args.sliderContainerObject).css(
-												'min-height', slide_height);
-										$(args.sliderContainerObject).css(
-												'height', 'auto');
-										$(args.sliderContainerObject).find(
-												'.ux_banner .center').vAlign();
-									}, 300);
-
-								}
-
-								function startSlider(args) {
-									/* remove spinner when slider is loaded */
-									$(args.sliderContainerObject).find(
-											'.loading').fadeOut();
-
-									/* add current class to first slide */
-									$(args.currentSlideObject).addClass(
-											'current');
-
-									/* add parallax class if contains paralaxx slides */
-									$(args.sliderContainerObject).find(
-											'.ux_parallax').parent().parent()
-											.parent().addClass(
-													'parallax_slider');
-
-									/* animate first slide */
-									$(args.currentSlideObject)
-											.find('.inner')
-											.addClass(
-													$(args.currentSlideObject)
-															.find('.inner')
-															.attr(
-																	'data-animate'));
-									$(args.currentSlideObject)
-											.find('.scroll-animate')
-											.each(
-													function() {
-														$(this)
-																.addClass(
-																		'animated')
-																.addClass(
-																		$(this)
-																				.attr(
-																						'data-animate'));
-													});
-
-									/* set height of first slide */
-									var slide_height = $(
-											args.currentSlideObject)
-											.outerHeight();
-									$(args.sliderContainerObject).css(
-											'min-height', slide_height);
-									$(args.sliderContainerObject).css('height',
-											'auto');
-
-									/* set text position */
 									$(args.sliderContainerObject).find(
 											'.ux_banner .center').vAlign();
+								}, 300);
 
-									/* add slider bullets */
-									var slide_id = 1;
-									$(args.sliderContainerObject)
-											.find(".slider > *")
-											.each(
-													function() {
-														$(
-																args.sliderContainerObject)
-																.find(
-																		'.sliderBullets')
-																.append(
-																		'<div class="bullet" data-slide="'+slide_id+'"></div>');
-														slide_id++;
-													});
+							}
 
-									/* add current class to bullets */
-									$(args.sliderContainerObject).find(
-											'.sliderBullets .bullet:first')
-											.addClass('active');
+							function startSlider(args) {
+								/* remove spinner when slider is loaded */
+								$(args.sliderContainerObject).find('.loading')
+										.fadeOut();
 
-									/* make bullets clickable */
-									$(args.sliderContainerObject)
-											.find('.bullet')
-											.click(
-													function() {
-														$(
-																args.sliderContainerObject)
-																.iosSlider(
-																		'goToSlide',
-																		$(this)
-																				.data(
-																						'slide'));
-													});
-								}
-							})
-		})(jQuery);
-	</script>
+								/* add current class to first slide */
+								$(args.currentSlideObject).addClass('current');
+
+								/* add parallax class if contains paralaxx slides */
+								$(args.sliderContainerObject).find(
+										'.ux_parallax').parent().parent()
+										.parent().addClass('parallax_slider');
+
+								/* animate first slide */
+								$(args.currentSlideObject)
+										.find('.inner')
+										.addClass(
+												$(args.currentSlideObject)
+														.find('.inner').attr(
+																'data-animate'));
+								$(args.currentSlideObject)
+										.find('.scroll-animate')
+										.each(
+												function() {
+													$(this)
+															.addClass(
+																	'animated')
+															.addClass(
+																	$(this)
+																			.attr(
+																					'data-animate'));
+												});
+
+								/* set height of first slide */
+								var slide_height = $(args.currentSlideObject)
+										.outerHeight();
+								$(args.sliderContainerObject).css('min-height',
+										slide_height);
+								$(args.sliderContainerObject).css('height',
+										'auto');
+
+								/* set text position */
+								$(args.sliderContainerObject).find(
+										'.ux_banner .center').vAlign();
+
+								/* add slider bullets */
+								var slide_id = 1;
+								$(args.sliderContainerObject)
+										.find(".slider > *")
+										.each(
+												function() {
+													$(
+															args.sliderContainerObject)
+															.find(
+																	'.sliderBullets')
+															.append(
+																	'<div class="bullet" data-slide="'+slide_id+'"></div>');
+													slide_id++;
+												});
+
+								/* add current class to bullets */
+								$(args.sliderContainerObject).find(
+										'.sliderBullets .bullet:first')
+										.addClass('active');
+
+								/* make bullets clickable */
+								$(args.sliderContainerObject)
+										.find('.bullet')
+										.click(
+												function() {
+													$(
+															args.sliderContainerObject)
+															.iosSlider(
+																	'goToSlide',
+																	$(this)
+																			.data(
+																					'slide'));
+												});
+							}
+						})
+	})(jQuery);
+</script>	
 
 </body>
 </html>
