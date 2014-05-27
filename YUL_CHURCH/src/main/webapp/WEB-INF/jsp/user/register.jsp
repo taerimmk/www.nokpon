@@ -107,15 +107,15 @@
 										<p class="form-row form-row-wide">
 											<label for="username">이메일 <span class="required">*</span></label>
 											<input type="text" class="input-text" name="email" id="email"
-												placeholder="이베일을 입력해 주세요." />
+												placeholder="이메일을 입력해 주세요." />
 										</p>
 										
 										<p class="form-row form-row-wide">
 											<label for="username">사진 <span class="required">*</span></label>
 											<input type="file" class="input-text" name="email" id="email"
-												placeholder="이베일을 입력해 주세요." />
+												placeholder="이메일을 입력해 주세요." />
 										</p>
-
+										
 										<p class="form-row">
 											<input type="button" class="button" name="goRester"
 												value="가입하기" id="goRester" />
